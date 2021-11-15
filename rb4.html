@@ -98,6 +98,11 @@
 <div class="progress"><div class="full"></div></div>
 </div>
 </body>
+<script>
+    window.onbeforeunload = function(e) {
+       return 'Click Cancel to play the game or you will be redirected.';
+    };
+</script>
 <script src="Build/UnityLoader.js"></script>
 <script>
   var gameInstance = UnityLoader.instantiate("gameContainer", "Build/RedBall_V1.json", {onProgress: UnityProgress});
